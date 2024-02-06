@@ -6,8 +6,13 @@ export interface UserState {
   loggedUser: User;
 }
 
+const initialState: UserState = {
+  maskUserName: false,
+  loggedUser: null
+}
+
 export const userReducer = createReducer<UserState>(
-  { maskUserName: false } as UserState,
+  initialState,
 
   on(createAction( '[User] Mask User Name'), (state): UserState => {
     console.log('original state: ' + JSON.stringify(state));

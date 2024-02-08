@@ -1,4 +1,4 @@
-import { getCurrentProduct } from './../state/product.reducer';
+import { getCurrentProduct } from './../state';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -7,7 +7,7 @@ import { ProductService } from '../product.service';
 import { GenericValidator } from '../../shared/generic-validator';
 import { NumberValidators } from '../../shared/number.validator';
 import { Store } from '@ngrx/store';
-import { State } from '../state/product.reducer';
+import { State } from '../state';
 import * as ProductActions from "../state/product.actions";
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';

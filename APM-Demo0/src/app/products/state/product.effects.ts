@@ -4,8 +4,6 @@ import { ProductService } from '../product.service';
 
 import * as ProductActions from './product.actions';
 import { catchError, concatMap, map, mergeMap } from 'rxjs/operators';
-import { Store } from '@ngrx/store';
-import { State } from './product.reducer';
 import { of } from 'rxjs';
 
 @Injectable()
